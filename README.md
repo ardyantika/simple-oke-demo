@@ -2,15 +2,18 @@
 Walkthrough for simple OKE demo
 
 Section 1: Pull Image from Kominfo and Push to OCIR
-1. Prepare repository
-	1. Go to Developer Services - Container Registry (Under Containers & Artifacts group)
-	2. Create repository by hitting "Create repository" button and put the name for repository (repo name will be used for docker tag and docker push later)
+
+A. Prepare repository
+  1. Go to Developer Services - Container Registry (Under Containers & Artifacts group)
+  2. Create repository by hitting "Create repository" button and put the name for repository (repo name will be used for docker tag and docker push later)
   3. Take note on the repository namespace (E.g.: axmmgq8syyah)
-2. Get authentication token
-	1. Go to user menu in the top-right of OCI console
+
+B. Get authentication token
+  1. Go to user menu in the top-right of OCI console
   2. Click on "User Settings" -- "Auth Tokens" (Under Resources on the bottom-left)
   3. Click on "Generate Token" button and put informative description *Don't forget to copy the generated token since it won't be shown again
-3. Pull image and push to OCIR
+
+C. Pull image and push to OCIR
   1. Open up Cloud Shell terminal
   2. Login to Kominfo repo by typing up: docker login registry-splp.layanan.go.id/sso/sso-layanan:659 -u oracledev_token
   3. Paste the auth token provided by kominfo when prompted for password: 2xQpYy4x2kz58RCmWaaZ
